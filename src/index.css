@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Roadrage";
+    src: url("./fonts/Roadrage.otf");
+    font-weight: normal;
+}
+
+h1 {
+    font-family: 'Roadrage';
+}
+
+.trick__inner {
+    background-color: rgb(208, 141, 208);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}

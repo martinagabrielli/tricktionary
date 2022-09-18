@@ -1,13 +1,13 @@
-const reviews = [
+const tricks = [
     {
         id: 1,
         name: 'Front stall',
         difficulty: 1,
         prerequisites: ['pumping'],
         image:
-        'https://giphy.com/clips/JustSeconds-rEKcXVfv4D1seZUBqt',
+        './gifs/front-stall.gif',
         description:
-        "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+        "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up  Disrupt glossier gastropub deep v vice.",
     },
     {
         id: 2,
@@ -15,8 +15,8 @@ const reviews = [
         difficulty: 2,
         prerequisites: ['pumping'],
         image:
-        'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg',
-        text:
+        './gifs/fakie-stall.gif',
+        description:
         'Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.',
     },
     {
@@ -25,18 +25,18 @@ const reviews = [
         difficulty: 2,
         prerequisites: ['pumping'],
         image:
-        'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg',
-        text:
+        './gifs/cartwheel.jpg',
+        description:
         'Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.',
     },
     {
         id: 4,
         name: 'Cartwheel',
-        difficulty: '',
+        difficulty: 3,
         prerequisites: ['pumping'],
         image:
         'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg',
-        text:
+        description:
         'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
     },
     {
@@ -46,7 +46,7 @@ const reviews = [
         prerequisites: ['pumping', 'backside', 'dita drop'],
         image:
         'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg',
-        text:
+        description:
         'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
     },
     {
@@ -56,9 +56,9 @@ const reviews = [
         prerequisites: ['pumping'],
         image:
         'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg',
-        text:
+        description:
         'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
     },
 ];
   
-export default reviews;
+export default tricks;
