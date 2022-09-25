@@ -1,4 +1,5 @@
-import './App.css';
+// import './App.css';
+import './scss/styles.js';
 import TricksRollup from './components/TricksRollup';
 import tricks from './tricks.js';
 
