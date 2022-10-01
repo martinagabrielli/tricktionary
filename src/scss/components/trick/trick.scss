@@ -1,0 +1,13 @@
+
+@import '../../mixins.scss';
+@import '../../variables.scss';
+
+.trick {
+    &__inner {
+        color: $white;
+        background-color: #4B3CAC;
+        border-radius: 8px;
+        padding: 2rem;
+        margin-bottom: 1rem;
+    }
+}
