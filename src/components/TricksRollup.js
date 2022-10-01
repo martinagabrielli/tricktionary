@@ -6,7 +6,7 @@ export default function TrickRollup() {
     return <>
         <section className="row">
             {tricks.map(trick =>
-                <Trick details={trick} />
+                <Trick key={trick.id} details={trick} />
             )}
         </section>
     </>
