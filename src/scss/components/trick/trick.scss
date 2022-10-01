@@ -5,9 +5,13 @@
 .trick {
     &__inner {
         color: $white;
-        background-color: #4B3CAC;
+        background-color: #806491;
         border-radius: 8px;
         padding: 2rem;
         margin-bottom: 1rem;
+    }
+
+    &__single-title {
+        margin-bottom: 2rem;
     }
 }
