@@ -27,12 +27,15 @@ export default function Trick({details}) {
             bottom: 'auto',
             marginRight: '-50%',
             transform: 'translate(-50%, -50%)',
-        },
+        }
     };
 
     return <>
         <section className="trick__single col-lg-4 text-center">
-            <div className="trick__inner">
+            <div className="trick__inner" onClick={openModal}>
+                <div className="trick__background-image" style={{backgroundImage: `url(${details.image})`}}>
+                    <button className="trick__background-button">Learn</button>
+                </div>
                 <h1 className="trick__single-title">{details.name}</h1>
                 <p>{details.description}</p>
                 <div className="d-flex justify-content-center">
@@ -40,22 +43,21 @@ export default function Trick({details}) {
                     <span> </span>
                     <p>{details.difficulty}/5</p>
                 </div>
-                <button onClick={openModal}>View more</button>
                 
-                <Modal
-                    isOpen={modalIsOpen}
-                    onAfterOpen={afterOpenModal}
-                    onRequestClose={closeModal}
-                    style={customStyles}
-                    contentLabel="Example Modal"
-                >
-                    <button className="trick__modal-close" onClick={closeModal}>close</button>
-                    <div className="trick__modal-content d-flex justify-content-center flex-column">
-                        <h2 className="trick__modal-title text-center">{details.name}</h2>
-                        <img className="trick__modal-image" src={details.image} />
-                    </div>
-                </Modal>
             </div>
         </section>
+        <Modal
+            isOpen={modalIsOpen}
+            onAfterOpen={afterOpenModal}
+            onRequestClose={closeModal}
+            style={customStyles}
+            contentLabel="Example Modal"
+        >
+            <button className="trick__modal-close" onClick={closeModal}>close</button>
+            <div className="trick__modal-content d-flex justify-content-center flex-column">
+                <h2 className="trick__modal-title text-center">{details.name}</h2>
+                <img className="trick__modal-image" src={details.image} />
+            </div>
+        </Modal>
     </>
 }
