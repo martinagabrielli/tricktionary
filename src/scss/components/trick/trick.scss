@@ -14,4 +14,33 @@
     &__single-title {
         margin-bottom: 2rem;
     }
+
+    &__modal-content {
+        padding: 3rem 20rem;
+    }
+
+    &__modal-close {
+        display: flex;
+        margin-left: auto;
+    }
+
+    &__modal-title {
+        margin-bottom: 3rem;
+    }
+
+    &__modal-image {
+        height: 40rem;
+        width: auto;
+    }
+}
+
+.ReactModal {
+    &__Content {
+        width: 95%;
+        height: 95%;
+    }
+
+    &__Overlay {
+        background-color: #141619bf !important;
+    }
 }

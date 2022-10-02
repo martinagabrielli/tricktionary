@@ -49,15 +49,11 @@ export default function Trick({details}) {
                     style={customStyles}
                     contentLabel="Example Modal"
                 >
-                    <button onClick={closeModal}>close</button>
-                    <div>I am a modal</div>
-                    <form>
-                        <input />
-                        <button>tab navigation</button>
-                        <button>stays</button>
-                        <button>inside</button>
-                        <button>the modal</button>
-                    </form>
+                    <button className="trick__modal-close" onClick={closeModal}>close</button>
+                    <div className="trick__modal-content d-flex justify-content-center flex-column">
+                        <h2 className="trick__modal-title text-center">{details.name}</h2>
+                        <img className="trick__modal-image" src={details.image} />
+                    </div>
                 </Modal>
             </div>
         </section>
