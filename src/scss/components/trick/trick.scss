@@ -47,22 +47,18 @@
         margin-bottom: 2rem;
     }
 
-    &__modal-content {
-        padding: 3rem 20rem;
-    }
-
     &__modal-close {
         display: flex;
         margin-left: auto;
     }
 
     &__modal-title {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 
     &__modal-image {
-        height: 40rem;
-        width: auto;
+        height: auto;
+        width: 100%;
     }
 }
 

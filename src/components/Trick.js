@@ -54,9 +54,36 @@ export default function Trick({details}) {
             contentLabel="Example Modal"
         >
             <button className="trick__modal-close" onClick={closeModal}>close</button>
-            <div className="trick__modal-content d-flex justify-content-center flex-column">
-                <h2 className="trick__modal-title text-center">{details.name}</h2>
-                <img className="trick__modal-image" src={details.image} />
+            <div className="trick__modal-content container-fluid">
+                <div className="trick__modal-row row">
+                    <div className="trick__modal-col-1 col-6">
+                        <img className="trick__modal-image" src={details.image} />
+                    </div>
+                    <div className="trick__modal-col-2 col-6">
+                        <h2 className="trick__modal-title">{details.name}</h2>
+                        <p className="trick__modal-description">{details.description}</p>
+                        {details.prerequisites ?
+                        <div className="trick__modal-prerequisites">
+                            <h4>Prerequisites</h4>
+                            <div class="trick__modal-prerequisites-wrapper d-flex">
+                                {details.prerequisites.map((prerequisite, i) =>
+                                    <p>{prerequisite.charAt(0).toUpperCase() + prerequisite.slice(1)} {i === details.prerequisites.length - 1 ? '' : <span>/ </span>}</p>
+                                )}
+                            </div>
+                        </div>
+                        : null}
+                        {details.resources ?
+                        <div className="trick__modal-resources">
+                            <h4>Resources</h4>
+                            <div class="trick__modal-resources-wrapper d-flex flex-column">
+                                {details.resources.map((resource, i) =>
+                                    <a key={i} href={resource.link} target="blank">{resource.title}</a>
+                                )}
+                            </div>
+                        </div>
+                        : null}
+                    </div>
+                </div>
             </div>
         </Modal>
     </>
