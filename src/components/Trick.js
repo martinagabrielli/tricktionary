@@ -48,10 +48,7 @@ export default function Trick({details}) {
         </section>
         <Modal
             isOpen={modalIsOpen}
-            onAfterOpen={afterOpenModal}
-            onRequestClose={closeModal}
             style={customStyles}
-            contentLabel="Example Modal"
         >
             <button className="trick__modal-close" onClick={closeModal}>close</button>
             <div className="trick__modal-content container-fluid">
