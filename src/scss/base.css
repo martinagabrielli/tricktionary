@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Roadrage";
+  src: url("../fonts/Roadrage.otf");
+  font-weight: normal;
+}
+body {
+  font-family: "Space Mono", monospace;
+}
+
+h1 {
+  font-family: "Roadrage";
+}
+
+button {
+  width: 6rem;
+  min-width: 6rem;
+  padding: 0.7rem;
+  text-transform: uppercase;
+  color: #FFF;
+  border-radius: 25px;
+  border: 0;
+  letter-spacing: 2px;
+  background: rgb(247, 236, 255);
+  background: linear-gradient(0, rgb(247, 236, 255) -21%, rgb(128, 77, 246) 64%);
+}/*# sourceMappingURL=base.css.map */

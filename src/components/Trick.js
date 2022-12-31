@@ -62,9 +62,9 @@ export default function Trick({details}) {
                         {details.prerequisites ?
                         <div className="trick__modal-prerequisites">
                             <h4>Prerequisites</h4>
-                            <div class="trick__modal-prerequisites-wrapper d-flex">
+                            <div className="trick__modal-prerequisites-wrapper d-flex">
                                 {details.prerequisites.map((prerequisite, i) =>
-                                    <p>{prerequisite.charAt(0).toUpperCase() + prerequisite.slice(1)} {i === details.prerequisites.length - 1 ? '' : <span>/ </span>}</p>
+                                    <p key={i}>{prerequisite.charAt(0).toUpperCase() + prerequisite.slice(1)} {i === details.prerequisites.length - 1 ? '' : <span>/ </span>}</p>
                                 )}
                             </div>
                         </div>
@@ -72,9 +72,9 @@ export default function Trick({details}) {
                         {details.resources ?
                         <div className="trick__modal-resources">
                             <h4>Resources</h4>
-                            <div class="trick__modal-resources-wrapper d-flex flex-column">
+                            <div className="trick__modal-resources-wrapper d-flex flex-column">
                                 {details.resources.map((resource, i) =>
-                                    <a key={i} href={resource.link} target="blank">{resource.title}</a>
+                                    <a key={resource.id} href={resource.link} target="blank">{resource.title}</a>
                                 )}
                             </div>
                         </div>

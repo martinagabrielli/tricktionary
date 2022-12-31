@@ -10,7 +10,7 @@ const tricks = [
         "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up  Disrupt glossier gastropub deep v vice.",
         resources: [
             {id: 1, title: 'How to Plate Stall and Fakie Stall on Roller Skates | Trick Tutorial', link: 'https://www.youtube.com/watch?v=WM7vqNmvCCM'},
-            {id: 1, title: 'How to front side or plate stall on roller skates!', link: 'https://www.youtube.com/watch?v=V6NZVIOJdA0'},
+            {id: 2, title: 'How to front side or plate stall on roller skates!', link: 'https://www.youtube.com/watch?v=V6NZVIOJdA0'},
         ]
     },
     {
